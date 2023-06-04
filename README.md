@@ -1,5 +1,6 @@
 # LeavingManagementSystem
 Java app allows to control leave letter.
+\n Switch to Java-17
 \n Set up db name, password, project name in db.properties to match db properties in your computer.
 \n Start the app by clicking to LoginFrame.java then run it.
 \n Login account

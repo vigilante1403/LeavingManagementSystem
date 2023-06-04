@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DepartmentList" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a5168de5-720c-44a4-b83e-6eff81ca2687">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\main\java\reports\DataAdapter.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT *
+FROM department]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+	</field>
+	<field name="name_department" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name_department"/>
+		<property name="com.jaspersoft.studio.field.label" value="name_department"/>
+	</field>
+	<field name="manager_dpt_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="manager_dpt_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="manager_dpt_id"/>
+	</field>
+	<field name="number_emp_in_dpt" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="number_emp_in_dpt"/>
+		<property name="com.jaspersoft.studio.field.label" value="number_emp_in_dpt"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="160" y="40" width="100" height="30" uuid="9191ff4d-c3f5-4c3a-ba2a-13adf6945849"/>
+				<text><![CDATA[DEPARTMENT LIST]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="31" uuid="0efe446c-3c5a-4c2b-a264-4a4694972003">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="daa4cfcb-e360-410a-9eb3-3b26507655f7"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" uuid="cfc4e8d7-f19d-4cdd-ae39-f49862dbdec9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54a98d5b-0f96-44fe-b55b-026fa229ec46"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[name_department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" uuid="85e01349-32ec-4ecb-92f0-74c6f06f7dc7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7799f666-78ca-47ba-900d-929ccd5f14db"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[manager_dpt_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" uuid="509e012b-92c3-4f9e-a5da-2ed89fd4b30c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8c190f8-511f-45fb-8bef-85d98d28ad49"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[number_emp_in_dpt]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="090759a8-33d1-404c-b40b-23e0d02cf8ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="daa4cfcb-e360-410a-9eb3-3b26507655f7"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="30" uuid="23870024-c11e-43fd-9285-3c82c7cff39b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54a98d5b-0f96-44fe-b55b-026fa229ec46"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{name_department}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="30" uuid="e7b3133b-01ad-491c-9f40-34a7f26d42c6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7799f666-78ca-47ba-900d-929ccd5f14db"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{manager_dpt_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="FixRelativeToBottom" x="417" y="0" width="138" height="30" uuid="00e46a17-9fbb-4065-85de-2c66c6c3126f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8c190f8-511f-45fb-8bef-85d98d28ad49"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{number_emp_in_dpt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
